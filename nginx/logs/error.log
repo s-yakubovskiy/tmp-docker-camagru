@@ -1,0 +1,5 @@
+2020/02/28 20:51:17 [error] 6#6: *1 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
+2020/02/28 20:53:19 [error] 6#6: *2 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
+2020/02/28 20:53:30 [error] 6#6: *3 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
+2020/02/28 20:54:07 [error] 6#6: *6 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
+2020/02/29 18:22:00 [error] 7#7: *3 open() "/var/www/camagru/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: camagru.local, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"

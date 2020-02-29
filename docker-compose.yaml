@@ -1,0 +1,49 @@
+version: "3.3"
+
+services:
+    nginx:
+        image: nginx:latest
+        container_name: nginx-camagru
+
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./nginx/core:/etc/nginx/conf.d
+            - ./nginx/www:/var/www/
+            - ./nginx/logs:/var/log/nginx/
+            - ./nginx/html:/usr/share/nginx/html/
+
+        links:
+            - php
+    
+    mysql:
+        image: mysql:latest
+        ports:
+            - "3306:3306"
+        container_name: mysql-camagru
+        environment:
+            - MYSQL_ROOT_PASSWORD=helloworld
+            - MYSQL_DATABASE=db_camagru
+            - MYSQL_USER=camagru
+            - MYSQL_PASSWORD=helloworld
+
+        volumes:
+            - ./mysql:/var/lib/mysql
+
+    php:
+        build: ./php
+        container_name: php-fpm-camagru
+
+        volumes:
+            - ./nginx/www:/var/www
+        links:
+            - mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin-camagru
+        ports:
+            - "8090:80"
+        links:
+            - mysql:db
