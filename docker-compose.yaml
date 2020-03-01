@@ -37,6 +37,7 @@ services:
 
         volumes:
             - ./nginx/www:/var/www
+            - ./php/php.ini:/usr/local/etc/php/php.ini
         links:
             - mysql
 

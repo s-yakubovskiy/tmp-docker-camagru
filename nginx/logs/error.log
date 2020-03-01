@@ -3,3 +3,6 @@
 2020/02/28 20:53:30 [error] 6#6: *3 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
 2020/02/28 20:54:07 [error] 6#6: *6 directory index of "/var/www/magento2/" is forbidden, client: 172.22.0.1, server: magento2.dev, request: "GET / HTTP/1.1", host: "localhost:8008"
 2020/02/29 18:22:00 [error] 7#7: *3 open() "/var/www/camagru/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: camagru.local, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2020/03/01 07:05:39 [error] 6#6: *14 open() "/var/www/camagru/favicon.ico" failed (2: No such file or directory), client: 172.29.0.1, server: camagru.local, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2020/03/01 07:07:01 [error] 6#6: *14 client intended to send too large body: 1491918 bytes, client: 172.29.0.1, server: camagru.local, request: "POST /functions/merge.php HTTP/1.1", host: "localhost", referrer: "http://localhost/upload.php?id=use_cam"
+2020/03/01 07:10:27 [error] 7#7: *1 open() "/var/www/camagru/favicon.ico" failed (2: No such file or directory), client: 172.29.0.1, server: camagru.local, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
